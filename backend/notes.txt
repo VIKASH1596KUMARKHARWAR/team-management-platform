@@ -1,0 +1,9 @@
+backend/
+├── config/          # For configuration like database connection
+├── controllers/     # For controllers
+├── middleware/      # For middleware like authentication
+├── models/          # For Mongoose models
+├── routes/          # For API routes
+├── .env             # Environment variables
+├── server.js        # Main entry point for backend
+└── package.json     # Node.js dependencies and scripts

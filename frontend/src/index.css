@@ -1,0 +1,419 @@
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.dashboard-header {
+  background-color: #4a90e2;
+  color: white;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dashboard-content {
+  display: flex;
+  flex: 1;
+}
+
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 1rem;
+}
+
+.sidebar nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar nav ul li {
+  margin: 0.5rem 0;
+}
+
+.main-content {
+  flex: 1;
+  padding: 1rem;
+}
+
+.overview-cards {
+  display: flex;
+  gap: 1rem;
+}
+
+.card {
+  flex: 1;
+  background-color: #e7e7e7;
+  padding: 1rem;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.team-management {
+  margin-top: 1rem;
+}
+
+.activity-feed, .todo-list {
+  margin-top: 1rem;
+  background-color: #f7f7f7;
+  padding: 1rem;
+  border-radius: 5px;
+}
+/* Container Styling */
+.add-team-member-container {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading */
+h2 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.team-member-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Group Styling */
+.form-group {
+  margin-bottom: 15px;
+}
+
+/* Label Styling */
+.form-group label {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  display: block;
+  color: #333;
+}
+
+/* Select Input Styling */
+.form-control {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  transition: border-color 0.3s ease-in-out;
+}
+
+/* Add some focus effect on inputs */
+.form-control:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Submit Button Styling */
+.submit-btn {
+  padding: 10px 15px;
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.submit-btn:disabled {
+  background-color: #5a9bd8;
+  cursor: not-allowed;
+}
+
+/* Button hover effect */
+.submit-btn:hover:not(:disabled) {
+  background-color: #0056b3;
+}
+
+/* Error Message Styling */
+.error-message {
+  color: red;
+  margin-bottom: 15px;
+}
+/* TeamManagement.css */
+.team-management {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    margin: 10px 0;
+    width: 300px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin: 10px 0;
+    padding: 10px;
+}
+
+li button {
+    background-color: #f44336;
+    margin-left: 20px;
+}
+
+li button:hover {
+    background-color: #e53935;
+}
+
+/* Add a line separator between each team */
+.team-item {
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+.team-item:last-child {
+    border-bottom: none; /* Remove border for the last item */
+}
+/* TeamManagement.css */
+
+.equal-height-card {
+  display: flex;
+  flex-direction: column;
+  height: 100%; /* Ensures all cards take full height */
+}
+
+.card-body {
+  flex-grow: 1; /* Makes the card body grow to fill the card */
+}
+
+.card-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* TeamDashboard.css */
+.team-dashboard {
+  padding: 20px;
+  background-color: #f4f4f4;
+}
+
+.dashboard-sections {
+  display: flex;
+  gap: 20px;
+}
+
+.document-management, .todo-list {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+input[type="file"], input[type="text"] {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+li {
+  padding: 5px 0;
+}
+.team-todos {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.team-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.todo-item {
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+.todo-title {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.todo-description {
+  margin: 5px 0;
+}
+
+.todo-status {
+  font-weight: bold;
+}
+
+.todo-actions {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.edit-button,
+.complete-button,
+.delete-button {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #4caf50; /* Green */
+  color: white;
+}
+
+.complete-button {
+  background-color: #2196F3; /* Blue */
+  color: white;
+}
+
+.delete-button {
+  background-color: #f44336; /* Red */
+  color: white;
+}
+
+
+/* //membertodo */
+.member-todos {
+  padding: 20px;
+  max-width: 600px; /* Adjust the width as needed */
+  margin: 0 auto;   /* Center the component */
+  background: #fff; /* Optional: Add a background color */
+  border: 1px solid #ddd; /* Optional: Add border for better visibility */
+  border-radius: 5px; /* Optional: Rounded corners */
+  margin-top: 15px;
+}
+
+.member-title {
+  text-align: center; /* Center the title */
+  margin-bottom: 20px; /* Space below title */
+}
+
+.todo-list {
+  list-style-type: none; /* Remove bullet points */
+  padding: 0; /* Remove padding */
+}
+
+.todo-item {
+  background: #f9f9f9; /* Background color for individual todos */
+  border: 1px solid #ddd; /* Border for todo items */
+  border-radius: 5px; /* Rounded corners */
+  padding: 15px; /* Padding inside todo items */
+  margin-bottom: 10px; /* Space between todos */
+}
+
+.todo-title {
+  font-size: 1.2em; /* Size of the todo title */
+  margin: 0; /* Remove margin */
+}
+
+.todo-description {
+  margin: 5px 0; /* Margin for description */
+}
+
+.todo-status {
+  font-weight: bold; /* Bold status text */
+}
+
+.todo-actions {
+  display: flex; /* Flexbox for action buttons */
+  gap: 10px; /* Space between buttons */
+  margin-top: 10px; /* Space above actions */
+}
+
+.edit-button,
+.complete-button,
+.delete-button {
+  padding: 5px 10px; /* Padding for buttons */
+  border: none; /* Remove default border */
+  border-radius: 3px; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+.edit-button {
+  background-color: #4caf50; /* Green */
+  color: white; /* Text color */
+}
+
+.complete-button {
+  background-color: #2196F3; /* Blue */
+  color: white; /* Text color */
+}
+
+.delete-button {
+  background-color: #f44336; /* Red */
+  color: white; /* Text color */
+}
