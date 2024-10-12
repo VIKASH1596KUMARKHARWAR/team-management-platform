@@ -4,6 +4,7 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 const teamTodos = require('./routes/teamTodos'); // Import the new route
 const memberTodos = require('./routes/memberTodos'); // Import the new route
+const document= require('./routes/document'); // Import the new route
 
 dotenv.config();
 const app = express();
@@ -21,6 +22,7 @@ app.use('/api/teams', require('./routes/team'));
 app.use('/api/todos', require('./routes/todo'));
 app.use('/api', teamTodos); // Use the merged team and todo route
 app.use('/api', memberTodos); // Use the member todo route
+app.use('/api', document); // Use the member todo route
 
 app.use('/api', require('./routes/role')); // Role-based routes (admin and team member)
 

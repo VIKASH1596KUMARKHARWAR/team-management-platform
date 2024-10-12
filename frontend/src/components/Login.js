@@ -28,6 +28,10 @@ const Login = () => {
         }
     };
 
+    const handleRegisterRedirect = () => {
+        navigate('/register'); // Redirect to the registration page
+    };
+
     return (
         <div>
             <h2>Login</h2>
@@ -51,6 +55,12 @@ const Login = () => {
                 </button>
                 {error && <p style={{ color: 'red' }}>{error}</p>} 
             </form>
+            <p>
+                Don't have an account?{' '}
+                <button onClick={handleRegisterRedirect} style={{ cursor: 'pointer', color: 'blue', textDecoration: 'underline' }}>
+                    Register here
+                </button>
+            </p>
         </div>
     );
 };
