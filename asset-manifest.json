@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/VIKASH1596KUMARKHARWAR/.github.io/team-management-platform%3E/static/css/main.797916b3.css",
+    "main.js": "/VIKASH1596KUMARKHARWAR/.github.io/team-management-platform%3E/static/js/main.d45e9249.js",
+    "index.html": "/VIKASH1596KUMARKHARWAR/.github.io/team-management-platform%3E/index.html",
+    "main.797916b3.css.map": "/VIKASH1596KUMARKHARWAR/.github.io/team-management-platform%3E/static/css/main.797916b3.css.map",
+    "main.d45e9249.js.map": "/VIKASH1596KUMARKHARWAR/.github.io/team-management-platform%3E/static/js/main.d45e9249.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.797916b3.css",
+    "static/js/main.d45e9249.js"
+  ]
+}
